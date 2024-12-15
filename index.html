@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allcare Hospital</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+     <!-- Fixed Navigation Bar -->
+     <header>
+        <nav>
+            <div class="logo">
+                <img src="images/allcare.png" alt="Hospital Logo">
+            </div>
+            <ul class="nav-links">
+                <li class="hideonmobileview"><a href="home.html">Home</a></li>
+                <li class="hideonmobileview"><a href="aboutus.html">About Us</a></li>
+                <li class="hideonmobileview"><a href="services.html">Services</a></li>
+                <li class="hideonmobileview"><a href="doctors.html">Doctors</a></li>
+                <li class="hideonmobileview"><a href="reservations.html">Reservations</a></li>
+                <li class="hideonmobileview"><a href="index.html">Pharmacy</a></li>
+                <li class="mobile-menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="index.html">Pharmacy</a></li>
+            </ul>
+        </nav>
+        
+        
+    </header>
+    <main>
+        <!-- Analgesics Section -->
+        <section class="medicine-section">
+            <h2>Analgesics</h2>
+            <div class="item-container">
+                <div class="item">
+                    <div class="item-image">
+                        <img src="/images/paracetamol.png" alt="Medicine 1">
+                    </div>
+                    <p>Paracetamol</p>
+                    <p class="description">Pain relief medicine.</p>
+                    <div class="item-actions">
+                        <input type="number" min="0" value="0" class="quantity" data-name="Paracetamol" data-price="5">
+                        <button class="btn add-to-cart" data-name="Paracetamol" data-price="5">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-image">
+                        <img src="/images/paracetamol.png" alt="Medicine 1">
+                    </div>
+                    <p>Paracetamol</p>
+                    <p class="description">Pain relief medicine.</p>
+                    <div class="item-actions">
+                        <input type="number" min="0" value="0" class="quantity" data-name="Paracetamol" data-price="5">
+                        <button class="btn add-to-cart" data-name="Paracetamol" data-price="5">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-image">
+                        <img src="/images/paracetamol.png" alt="Medicine 1">
+                    </div>
+                    <p>Paracemol</p>
+                    <p class="description">Pain relief medicine.</p>
+                    <div class="item-actions">
+                        <input type="number" min="0" value="0" class="quantity" data-name="Paracetamol" data-price="5">
+                        <button class="btn add-to-cart" data-name="Paracetamol" data-price="5">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-image">
+                        <img src="/images/cataflam.webp" alt="Medicine 1">
+                    </div>
+                    <p>Cataflam</p>
+                    <p class="description">Cataflam is a nonsteroidal anti-inflammatory drug used to treat pain and inflammatory diseases </p>
+                    <div class="item-actions">
+                        <input type="number" min="0" value="0" class="quantity" data-name="Cataflam" data-price="10">
+                        <button class="btn add-to-cart" data-name="Cataflam" data-price="10">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-image">
+                        <img src="/images/paracetamol.png" alt="Medicine 1">
+                    </div>
+                    <p>Paracetamol</p>
+                    <p class="description">Pain relief medicine.</p>
+                    <div class="item-actions">
+                        <input type="number" min="0" value="0" class="quantity" data-name="Paracetamol" data-price="5">
+                        <button class="btn add-to-cart" data-name="Paracetamol" data-price="5">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-image">
+                        <img src="/images/paracetamol.png" alt="Medicine 1">
+                    </div>
+                    <p>Paracetamol</p>
+                    <p class="description">Pain relief medicine.</p>
+                    <div class="item-actions">
+                        <input type="number" min="0" value="0" class="quantity" data-name="Paracetamol" data-price="5">
+                        <button class="btn add-to-cart" data-name="Paracetamol" data-price="5">Add to Cart</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+       
+        <!-- Order Summary Section -->
+        <section class="order-summary">
+            <h2>Order Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="orderTable">
+                    <!-- Items will be dynamically added here -->
+                </tbody>
+            </table>
+            <div class="total">
+                <p>Total Price: $<span id="totalPrice">0.00</span></p>
+            </div>
+            <!--<div class="buy-now-container">
+                <button class="btn buy-now" id="buyNow">Buy Now</button>
+            </div>-->
+            <div class="favourites-buttons">
+                <button id="addToFavourites" class="btn">Add to Favourites</button>
+                <button id="applyFavourites" class="btn">Apply Favourites</button>
+                <button class="btn buy-now" id="buyNow">Buy Now</button>
+            </div>
+        </section> 
+        
+        
+    <script src="main.js"></script>    
+</body>    
