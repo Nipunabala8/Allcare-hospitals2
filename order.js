@@ -11,58 +11,6 @@ function showSidebar(){
   }
 
 
-
- /* document.addEventListener('DOMContentLoaded', () => {
-    // Retrieve order details from local storage
-    const orderDetails = JSON.parse(localStorage.getItem('cart')) || [];
-    const totalPrice = localStorage.getItem('totalPrice') || '0.00';
-
-    const orderSummary = document.getElementById('orderSummary');
-    const totalPriceElement = document.getElementById('totalPrice');
-
-    totalPriceElement.textContent = totalPrice;
-
-    // Populate the order table
-    orderDetails.forEach(item => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-            <td>${item.name}</td>
-            <td>${item.quantity}</td>
-            <td>$${(item.quantity * item.price).toFixed(2)}</td>
-        `;
-        orderSummary.appendChild(row);
-    });
-
-    // Handle form submission
-    const checkoutForm = document.getElementById('checkoutForm');
-    checkoutForm.addEventListener('submit', event => {
-        event.preventDefault();
-
-        // Validate form inputs
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const phone = document.getElementById('phone').value.trim();
-        const address = document.getElementById('address').value.trim();
-        const city = document.getElementById('city').value.trim();
-        const zip = document.getElementById('zip').value.trim();
-        const cardNumber = document.getElementById('cardNumber').value.trim();
-        const expiry = document.getElementById('expiry').value.trim();
-        const cvv = document.getElementById('cvv').value.trim();
-
-        if (!name || !email || !phone || !address || !city || !zip || !cardNumber || !expiry || !cvv) {
-            alert('Please fill in all required fields.');
-            return;
-        }
-
-        // Show success message
-        alert('Thank you for your purchase! Your order will be delivered soon.');
-
-        // Clear local storage and redirect
-        localStorage.removeItem('cart');
-        localStorage.removeItem('totalPrice');
-        window.location.href = 'index.html'; // Redirect to homepage
-    });
-});*/
 document.addEventListener('DOMContentLoaded', () => {
     // Retrieve order details
     const orderDetails = JSON.parse(localStorage.getItem('cart')) || [];
@@ -110,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             securityCode &&
             expirationDate
         ) {
-            // Calculate delivery date (7 days from today)
+            // Calculate delivery date (7 days from order date)
             const today = new Date();
             const deliveryDate = new Date(today);
             deliveryDate.setDate(today.getDate() + 7);

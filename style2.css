@@ -109,7 +109,10 @@ main {
 
 .medicine-section h2 {
     margin-bottom: 20px;
-    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    color:rgb(7, 39, 185);
+
 }
 
 .item-container {
@@ -162,7 +165,7 @@ main {
 }
 
 .btn {
-    background: #007bff;
+    background: rgb(7, 39, 185);
     color: white;
     border: none;
     padding: 8px 15px;
@@ -195,7 +198,7 @@ table th, table td {
 }
 
 table th {
-    background: #007bff;
+    background: rgb(7, 39, 185);;
     color: white;
 }
 
@@ -204,61 +207,26 @@ table th {
     font-size: 1.2em;
     margin-bottom: 20px;
 }
-/*
-.buy-now-container {
-    text-align: center;
-}
 
-.buy-now {
-    background: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.buy-now:hover {
-    background: #218838;
-}*/
 
 .remove-item {
     margin-left: 10px;
     color: red;
     cursor: pointer;
 }
-/*
-.favourites-buttons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.favourites-buttons .btn {
-    background: #6c757d;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.favourites-buttons .btn:hover {
-    background: #5a6268;
-}*/
 
 .favourites-buttons {
     margin-top: 20px;
     display: flex;
-    justify-content: flex-end; /* Align buttons to the right */
-    gap: 10px; /* Space between buttons */
+    justify-content: flex-end; 
+    gap: 10px; 
 }
 
 .favourites-buttons .btn, 
 .buy-now {
     background: #6c757d;
     color: white;
-    padding: 10px 15px; /* Unified size for all buttons */
+    padding: 10px 15px; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -270,7 +238,7 @@ table th {
 }
 
 .buy-now {
-    background: #28a745; /* Green for Buy Now button */
+    background: #28a745; 
 }
 
 .buy-now:hover {
@@ -300,8 +268,8 @@ table th {
         max-width: none;
     }
     .favourites-buttons {
-        flex-direction: column; /* Stack buttons vertically */
-        gap: 10px; /* Add spacing between stacked buttons */
+        flex-direction: column; 
+        gap: 10px; 
     }
 }
         

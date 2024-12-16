@@ -127,7 +127,7 @@ table th, table td {
 }
 
 table th {
-    background: #007bff;
+    background: rgb(7, 39, 185);
     color: white;
 }
 
@@ -163,3 +163,16 @@ form input, form select, form textarea {
 .order-details {
     margin-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+    .hideonmobileview {
+        display: none;
+    }
+}    
